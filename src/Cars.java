@@ -4,8 +4,8 @@ public class Cars {
         Car car2 = car1;
 
         System.out.println("Samochód 1:");
-        System.out.println("Marka: " + car1.brand + ", model: " + car1.model +
-                ", rocznik: " + car1.year + ", pojemność: " + car1.capacity);
+        System.out.printf("Marka: %s, Model: %s, rocznik: %d, pojemność: %.1f", car1.brand, car1.model,car1.year, car1.capacity);
+        System.out.println("");
 
         car1.brand = "Opel";
         car1.model = "Vectra";
@@ -13,7 +13,6 @@ public class Cars {
         car1.capacity = 1.8;
 
         System.out.println("Samochód 2:");
-        System.out.println("Marka: " + car2.brand + ", model: " + car2.model +
-                ", rocznik: " + car2.year + ", pojemność: " + car2.capacity);
+        System.out.printf("Marka: %s, Model: %s, rocznik: %d, pojemność: %.1f", car2.brand, car2.model,car2.year, car2.capacity);
     }
 }
